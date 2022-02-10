@@ -208,7 +208,10 @@ if(ENABLE_IPV6 AND NOT WIN32)
   endif()
 endif()
 
-curl_nroff_check()
+#+WELDER
+# Disable the warning because this is only used for manpages.
+#curl_nroff_check()
+#-WELDER
 find_package(Perl)
 
 cmake_dependent_option(ENABLE_MANUAL "to provide the built-in manual"
