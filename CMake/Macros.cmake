@@ -1,3 +1,8 @@
+#+WELDER
+# Disable policy warning.
+cmake_policy(SET CMP0075 NEW)
+#-WELDER
+
 #File defines convenience macros for available feature testing
 
 # This macro checks if the symbol exists in the library and if it
